@@ -1,0 +1,15 @@
+#include stalo.n>
+int main()
+{
+int a,b, sum, diff, pro, quo; printf"ENTER TWO NUMBERS\t");
+scanf ("%d%d", &a, &b) ;
+sum=a+b; 
+diff=a-b;
+pro=a*b;
+quo=(a/b);
+printf("Sum of two numbers is %d", sum);
+printf("\nDifference of two numbers is %d " ,diff);
+printf("\Product of two numbers is %d " ,pro);
+printf("InQuotient of two numbers is %d " ,quo);
+return 0;
+}
