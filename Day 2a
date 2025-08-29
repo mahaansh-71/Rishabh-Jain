@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+int L,B,A,P;
+printf( "ENTER Length and Breath \t");
+scanf ("%d%d", &L,&B);
+A=L*B;
+printf"Area of two numbers are %d ",A) ;
+P=2*(L+B);
+printf("\nPerimeter of two numbers is %d ",P);
+return 0;
+}
