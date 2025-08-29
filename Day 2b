@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+float R,A,C;
+printf"ENTER Radius (t");
+scanf ("%f" ,&R);
+A=(3.14*R*R);
+printf("Area of circle %f ",A);
+C=(2*3.14*R);
+printf("\nPerimeter OF CIRCLE
+return 0;
+}
