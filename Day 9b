@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int P;
+    printf("Enter Percentage ");
+    scanf("%d",&P);
+    if(P>=90&&P<=100)
+    {
+        printf("Grade A ");
+    }
+    else if(P>=80&&P<=90)
+    {
+         printf("Grade B ");
+    }
+    else
+    {
+        printf("Fail");
+    }
+    return 0;
+}
