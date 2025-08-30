@@ -1,0 +1,23 @@
+int main()
+{
+    char ch;
+    printf("Enter a alpha ");
+    scanf("%c",&ch);
+    if(ch>=65&&ch<=90)
+    {
+        printf("Character %c is in Uppercase ",ch);
+    }
+    else if(ch>=97&&ch<=122)
+    {
+         printf("Character %c is in Lowercase ",ch);
+    }
+    else if(ch>='0'&&ch<='9')
+    {
+        printf("Character %c is a Digit",ch);
+    }
+    else
+    {
+        printf("Character %c is a special character",ch);
+    }
+    return 0;
+}
