@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    int T,H,M;
+    printf("Enter the time in secounds ");
+    scanf("%d",&T);
+    H=T/3600;
+    M=T/60;
+    printf("Hours:Minutes:Secounds = %d:%d:%d",H,M,T);
+    return 0;
+}
