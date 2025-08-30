@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Input an Interger ");
+    scanf("%d",&i);
+    if(i>0)
+    {
+        printf("%d is Positive ",i);
+    }
+    else if(i<0)
+    {
+        printf("%d is Negative ",i);
+    }
+    else
+    {
+        printf("%d is Zero ",i);
+    }
+    return 0;
+}
