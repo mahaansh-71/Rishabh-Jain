@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int P,R,T,SI,CI,A;
+    printf ("Enter the details ");
+    scanf("%d%d%d",&P,&R,&T);
+    SI=(P*R*T)/100;
+    A=P*((1+R/100),T);
+    CI=A-P;
+    printf("Simple intreset is = %d\n",SI);
+    printf("Compund intreset is = %d",CI);
+    return 0;
+}
