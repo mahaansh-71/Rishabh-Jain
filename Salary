@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int S,GS,NS,HRA,DA,I,LR,IT;
+    printf("Enter The Salary ");
+    scanf("%d",&S);
+    HRA=(S*30)/100;
+    DA=(S*20)/100;
+    I=7000;
+    GS=HRA+DA+I;
+    printf("Gross Salaray is = %d\n",GS);
+    LR=14000;
+    IT=(S*10)/100;
+    NS=GS-LR-IT;
+    printf("Net Salary is = %d",NS);
+    return 0;
+}
