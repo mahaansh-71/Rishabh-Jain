@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main() {
+    int n;
+    printf("Enter size of square matrix: ");
+    scanf("%d", &n);
+    int a[n][n];
+    printf("Enter elements of the matrix:\n");
+    for(int i = 0; i < n; i++) 
+{
+        for(int j = 0; j < n; j++) 
+{
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    int sum = 0;
+    int product = 1;
+
+    for(int i = 0; i < n; i++) 
+{
+        int j = n - 1 - i;  
+        sum=sum+a[i][j];
+        product=product*a[i][j];
+    }
+
+    printf("Sum of anti-diagonal elements = %d\n", sum);
+    printf("Product of anti-diagonal elements = %d\n", product);
+
+    return 0;
+}
