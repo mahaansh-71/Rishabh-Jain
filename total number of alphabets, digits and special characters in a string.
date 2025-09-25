@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main() 
+{
+    char str[100];
+    int i = 0;
+    int alpha = 0, digi = 0, spec = 0;
+    printf("Enter a string: ");
+    scanf("%[^\n]", str);
+    while (str[i] != '\0') 
+{
+        if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')) 
+{
+            alpha++;
+        }
+        else if (str[i] >= '0' && str[i] <= '9') 
+{
+            digi++;
+        }
+        else 
+{
+            spec++;
+        }
+        i++;
+    }
+    printf("Total Alphabets = %d\n", alpha);
+    printf("Total Digits = %d\n", digit);
+    printf("Total Special Characters = %d\n", spec);
+    return 0;
+}
