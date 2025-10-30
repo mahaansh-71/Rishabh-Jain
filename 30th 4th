@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    FILE *fp;
+    fp=fopen("R.txt","r");
+    char ch;
+    while((ch=fgetc(fp))!=EOF)
+    printf("%c",ch);
+    if(ch==' ')
+    {
+        int a=ch;
+        a++;
+        printf("%d",a);
+    }
+    else
+    {
+        printf("NULL");
+    }
+   
+
+return 1;
+
+}
