@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    FILE *fp;
+    
+    char ch;
+   
+    fp=fopen("R.txt","w");
+    ch=fgetc(fp);
+    if(ch==0)
+    {
+        printf("File is empty" );
+        return 1;
+    }
+    else
+    {
+        printf("File contains some text");
+    }
+    return 0;
+
+}
