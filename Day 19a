@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, x, y, hcf, lcm;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    x = a;
+    y = b;
+
+ 
+    while (x != y) {
+        if (x > y)
+            x = x - y;
+        else
+            y = y - x;
+    }
+
+    hcf = x;              
+    lcm = (a * b) / hcf;   
+
+    printf("LCM of %d and %d = %d\n", a, b, lcm);
+
+    return 0;
+}
