@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main() {
+    char op;
+    int a, b, result;
+
+    printf("Enter first number: ");
+    scanf("%d", &a);
+
+    printf("Enter second number: ");
+    scanf("%d", &b);
+
+    printf("Enter operator (+, -, *, /, %%): ");
+    scanf(" %c", &op);   // space before %c to avoid input issues
+
+    switch(op) {
+        case '+':
+            result = a + b;
+            printf("Result = %d\n", result);
+            break;
+
+        case '-':
+            result = a - b;
+            printf("Result = %d\n", result);
+            break;
+
+        case '*':
+            result = a * b;
+            printf("Result = %d\n", result);
+            break;
+
+        case '/':
+            if (b == 0)
+                printf("Error: Division by zero not allowed.\n");
+            else
+                printf("Result = %d\n", a / b);
+            break;
+
+        case '%':
+            if (b == 0)
+                printf("Error: Modulo by zero not allowed.\n");
+            else
+                printf("Result = %d\n", a % b);
+            break;
+
+        default:
+            printf("Invalid operator.\n");
+    }
+
+    return 0;
+}
